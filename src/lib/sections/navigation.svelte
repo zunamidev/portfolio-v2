@@ -14,9 +14,15 @@
         <li><a href="{href}" id={`${i}`}>{name}</a></li>
         {/each}
     </ul>
+    <ul id="desktop">
+        {#each navigation as { name, href }, i}
+        <li><a href="{href}" id={`${i}`}>{name}</a></li>
+        {/each}
+    </ul>
 </nav>
 <style lang="scss">
     @use './src/styles/variables.scss';
+
 
     #active {
         display: block;
@@ -25,6 +31,8 @@
     #deactive {
         display: none;
     }
+
+
 
     nav {
         #mobile {
@@ -54,6 +62,9 @@
     
     @media screen and (max-width: 768px) {
         nav {
+            #desktop {
+                display: hidden;
+            }
             #mobile {
                 display: block;
             }

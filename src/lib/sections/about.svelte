@@ -11,7 +11,6 @@ import Developer from '$lib/components/developer.svelte'
         Rerum aspernatur aperiam autem, nulla ipsum repellendus odit voluptatibus esse illo, molestias quam voluptatum! Dignissimos quaerat vel a suscipit sint officia, quae voluptatum fuga blanditiis temporibus distinctio adipisci, voluptatibus ab?
         Nemo at porro amet ullam odio accusantium. Aspernatur atque aliquam quibusdam fugit alias ipsam saepe, ex maxime repellendus harum aut doloribus veniam, id iste totam distinctio minima quam autem eius.
     </p>
-    
     </div>
     <div id="image">
         <Developer></Developer>
@@ -33,5 +32,15 @@ import Developer from '$lib/components/developer.svelte'
             position: relative;
             bottom: 6.4vh;
         }
+    }
+    @media screen and (max-width: 768px) {
+        section {
+            grid-template-columns: 1fr;
+            line-height: 1.4;
+            #image {
+                display: none;
+            }
+        }
+
     }
 </style>

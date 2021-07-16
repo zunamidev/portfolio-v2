@@ -33,4 +33,14 @@
             gap: 10px;
         }
     }
+
+    @media screen and (max-width: 768px) {
+        section {
+            .projects-list {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+        }
+
+    }
 </style>

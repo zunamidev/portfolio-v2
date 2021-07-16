@@ -28,4 +28,17 @@ a {
         font-size: 36px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    a {
+        .project {
+            height: 20vh;
+            width: inherit;
+            background: grey;
+            border-radius: 20px;
+            padding: 12px 17px;
+        }
+    }
+
+}
 </style>
